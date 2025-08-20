@@ -57,17 +57,15 @@ animation: aparecer .8s both ;;
     100% { transform: rotate(360deg); }
   }
 
+/* Hover infinito para tablet y tlf */ 
 
-  /* Arreglando Resolucion para tablets */
+@media (max-width: 1024px) {
+  .group .absolute {
+    opacity: 1 !important;
+  }
 
-  @media (min-width: 768px)  {
-  
-
-   #principal-image {
-      width: 100%;
-      max-width: 36rem;
-      height: auto;
-    }
-
-
+  .group img {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
 }
