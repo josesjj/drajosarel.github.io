@@ -56,3 +56,18 @@ animation: aparecer .8s both ;;
   @keyframes spin {
     100% { transform: rotate(360deg); }
   }
+
+
+  /* Arreglando Resolucion para tablets */
+
+  @media (min-width: 768px)  {
+  
+
+   .principal-image {
+      width: 100%;
+      max-width: 36rem;
+      height: auto;
+    }
+
+
+}
