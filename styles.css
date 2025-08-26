@@ -57,15 +57,95 @@ animation: aparecer .8s both ;;
     100% { transform: rotate(360deg); }
   }
 
-/* Hover infinito para tablet y tlf */ 
 
-@media (max-width: 1024px) {
-  .group .absolute {
-    opacity: 1 !important;
-  }
+/*      Estilos para el Formulario de Contacto  */    
 
-  .group img {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+
+/* Variables de color para mantener la consistencia con el diseño */
+:root {
+  --primary-color: #8b5cf6; /* Morado principal (purple-500) */
+  --primary-dark-color: #6d28d9; /* Morado más oscuro (purple-700) */
+  --text-color: #374151; /* Gris oscuro (gray-700) */
+  --border-color: #d1d5db; /* Gris claro (gray-300) */
+  --background-color: #ffffff;
+  --focus-ring-color: rgba(139, 92, 246, 0.4); /* Sombra de enfoque */
+}
+
+/* Contenedor del formulario */
+.contact-form {
+  background-color: var(--background-color);
+  padding: 2.5rem; /* 40px */
+  border-radius: 1rem; /* 16px */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb; /* gray-200 */
+}
+
+/* Grupo de cada campo (label + input) */
+.form-group {
+  margin-bottom: 1.5rem; /* 24px */
+}
+
+/* Estilo de las etiquetas */
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem; /* 8px */
+  font-size: 0.875rem; /* 14px */
+  font-weight: 600;
+  color: var(--primary-dark-color);
+}
+
+/* Estilo de los campos de entrada y el textarea */
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem; /* 12px 16px */
+  font-size: 1rem; /* 16px */
+  color: var(--text-color);
+  background-color: #f9fafb; /* gray-50 */
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem; /* 8px */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input::placeholder {
+  color: #9ca3af; /* gray-400 */
+}
+
+/* Interacción al hacer foco en un campo */
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px var(--focus-ring-color);
+}
+
+/* Estilo del botón de envío */
+.form-button {
+  width: 100%;
+  padding: 0.875rem 1.5rem; /* 14px 24px */
+  font-size: 1.125rem; /* 18px */
+  font-weight: 700;
+  color: #ffffff;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0.5rem; /* 8px */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto hover sobre el botón */
+.form-button:hover {
+  background-color: var(--primary-dark-color);
+  transform: translateY(-2px);
+}
+
+/* Efecto al presionar el botón */
+.form-button:active {
+  transform: translateY(0);
+}
+
+/* Diseño responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 1.5rem; /* 24px */
   }
 }

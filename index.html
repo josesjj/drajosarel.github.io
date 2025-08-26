@@ -164,26 +164,173 @@
   </section>
 </section>
 
+<!--Seccion Formulario de Contacto-->
+<section id="contacto" class="bg-purple-50 py-16 md:py-24 fade-in">
+  <div class="container mx-auto px-5">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-purple-700 uppercase drop-shadow-lg">Contáctame</h2>
+      <p class="text-lg text-gray-700 mt-4 max-w-2xl mx-auto">¿Lista para agendar tu cita o tienes alguna pregunta? Completa el formulario y te responderé lo antes posible.</p>
+    </div>
+
+    <form action="https://formsubmit.co/b7e4fa7eab0f7ef55f2b4e2b26412622" method="POST" class="contact-form max-w-2xl mx-auto">
+
+    <input type="hidden" name="_next" value="https://josesjj.github.io/drajosarel.github.io/">
 
 
+    <input type="hidden" name="_subject" value="Nuevo Mensaje desde la Página Web Odontológica">
+
+
+    <input type="hidden" name="_captcha" value="false"> 
+
+      <div class="form-group">
+
+        <label for="name" class="form-label">Nombre Completo</label>
+
+        <input type="text" id="name" name="name" class="form-input" placeholder="Ej: 
+        María Pérez" required>
+
+      </div>
+
+      <div class="form-group">
+
+        <label for="email" class="form-label">Correo Electrónico</label>
+
+        <input type="email" id="email" name="email" class="form-input" placeholder="Ej: maria.perez@correo.com" required>
+
+      </div>
+
+      <div class="form-group">
+
+        <label for="message" class="form-label">Mensaje o Motivo de Consulta</label>
+
+        <textarea id="message" name="message" class="form-input" rows="5" placeholder="Hola Dra. Quisiera agendar una cita para una limpieza dental..." required>
+
+        </textarea>
+      </div>
+
+      <button type="submit" class="form-button">Enviar Mensaje</button>
+
+    </form>
+
+  </div>
+</section>
+
+<!-- Preguntas flecha frecuentes-->
+<section id="faq" class="bg-white py-16 md:py-24 fade-in">
+  <div class="container mx-auto px-5">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-purple-700 uppercase drop-shadow-lg">Preguntas Frecuentes</h2>
+      <p class="text-lg text-gray-700 mt-4 max-w-3xl mx-auto">Aquí encontrarás respuestas a las dudas más comunes. Si no encuentras lo que buscas, no dudes en contactarme.</p>
+    </div>
+
+    <div class="max-w-3xl mx-auto" id="faq-accordion">
+      <!-- Pregunta 1 -->
+      <div class="py-5 border-b border-gray-200">
+        <button class="faq-toggle flex justify-between items-center w-full text-left text-gray-800 hover:text-purple-600 focus:outline-none">
+          <span class="text-lg font-semibold">¿Qué debo llevar a mi primera cita?</span>
+          <svg class="w-6 h-6 text-purple-600 shrink-0 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div class="faq-answer overflow-hidden" style="max-height: 0px; transition: max-height 0.5s ease-in-out;">
+          <p class="pt-4 text-gray-600">Para tu primera visita, por favor trae una identificación, cualquier historial dental relevante que tengas y una lista de los medicamentos que estés tomando actualmente. ¡Lo más importante es venir con ganas de mejorar tu sonrisa!</p>
+        </div>
+      </div>
+      <!-- Pregunta 2 -->
+      <div class="py-5 border-b border-gray-200">
+        <button class="faq-toggle flex justify-between items-center w-full text-left text-gray-800 hover:text-purple-600 focus:outline-none">
+          <span class="text-lg font-semibold">¿Atienden emergencias dentales?</span>
+          <svg class="w-6 h-6 text-purple-600 shrink-0 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div class="faq-answer overflow-hidden" style="max-height: 0px; transition: max-height 0.5s ease-in-out;">
+          <p class="pt-4 text-gray-600">Sí, atiendo emergencias. Por favor, contacta directamente a mi número de WhatsApp para una atención más rápida y poder evaluar la urgencia de tu caso.</p>
+        </div>
+      </div>
+      <!-- Pregunta 3 -->
+      <div class="py-5 border-b border-gray-200">
+        <button class="faq-toggle flex justify-between items-center w-full text-left text-gray-800 hover:text-purple-600 focus:outline-none">
+          <span class="text-lg font-semibold">¿Cómo es el manejo del dolor durante los procedimientos?</span>
+          <svg class="w-6 h-6 text-purple-600 shrink-0 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div class="faq-answer overflow-hidden" style="max-height: 0px; transition: max-height 0.5s ease-in-out;">
+          <p class="pt-4 text-gray-600">Mi prioridad es tu comodidad. Utilizo anestesia local de alta calidad y técnicas de manejo de la ansiedad para asegurar que tu experiencia sea lo más indolora y tranquila posible. Siempre converso contigo durante el procedimiento para asegurar tu bienestar.</p>
+        </div>
+      </div>
+      <!-- Pregunta 4 -->
+      <div class="py-5 border-b border-gray-200">
+        <button class="faq-toggle flex justify-between items-center w-full text-left text-gray-800 hover:text-purple-600 focus:outline-none">
+          <span class="text-lg font-semibold">¿Con qué frecuencia debo hacerme una limpieza dental?</span>
+          <svg class="w-6 h-6 text-purple-600 shrink-0 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        <div class="faq-answer overflow-hidden" style="max-height: 0px; transition: max-height 0.5s ease-in-out;">
+          <p class="pt-4 text-gray-600">Generalmente, se recomienda una limpieza dental profesional cada 6 meses. Sin embargo, dependiendo de tu salud bucal específica, podría recomendar una frecuencia diferente. Lo evaluaremos juntos en tu consulta.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Seccion Footer-->
 
-<footer class="bg-purple-700 text-white py-6 mt-10 fade-in">
-  <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
-    <div class="text-center md:text-left mb-4 md:mb-0">
-      <span class="font-bold text-lg">Dra. Josarel Diaz</span>
-      <span class="block text-sm mt-1">© 2025 Todos los derechos reservados.</span>
+<footer class="bg-gray-800 text-gray-300 fade-in">
+  <div class="container mx-auto px-5 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center md:text-left">
+      
+      <!-- Columna 1: Información de Contacto -->
+      <div class="space-y-4">
+        <h3 class="text-xl font-bold text-white uppercase tracking-wider">Dra. Josarel Diaz</h3>
+        <p class="text-gray-400">Odontología Integral y Humanizada</p>
+        <div>
+          <p class="font-semibold text-white">Dirección:</p>
+          <p class="text-gray-400">Piso 2 Consultorio 2-4, Torre Medica Pirineos, Carrera 21, con Calle 14<br>San Cristóbal, Táchira, Venezuela</p>
+        </div>
+        <div>
+          <p class="font-semibold text-white">Teléfono / WhatsApp:</p>
+          <a href="https://api.whatsapp.com/send?phone=584126764468" target="_blank" rel="noopener" class="text-gray-400 hover:text-purple-400 transition-colors">+58 412-6764468</a>
+        </div>
+      </div>
+
+      <!-- Columna 2: Redes Sociales -->
+       
+      <div class="space-y-4">
+        <h3 class="text-xl font-bold text-white uppercase tracking-wider">Sígueme</h3>
+        <div class="flex gap-4 justify-center md:justify-start">
+          <a href="https://www.instagram.com/dra.josareldiaz/" target="_blank" rel="noopener" class="text-gray-400 hover:text-purple-400 transition-colors">Instagram</a>
+          <a href="https://api.whatsapp.com/send?phone=584126764468" target="_blank" rel="noopener" class="text-gray-400 hover:text-purple-400 transition-colors">WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Columna 3: Mapa de Ubicación -->
+
+      <div class="lg:col-span-1 md:col-span-2">
+        <h3 class="text-xl font-bold text-white uppercase tracking-wider mb-4">Ubicación</h3>
+        <div class="overflow-hidden rounded-lg shadow-lg border border-gray-700">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126473.4669562344!2d-72.29084968603514!3d7.769962000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e666dbd347a7f83%3A0x3574b3134e753593!2sSan%20Crist%C3%B3bal%2C%20T%C3%A1chira%2C%20Venezuela!5e0!3m2!1ses-419!2sus!4v1695241884513!5m2!1ses-419!2sus" 
+            width="100%" 
+            height="200" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa de ubicación del consultorio">
+          </iframe>
+        </div>
+      </div>
     </div>
-    <div class="flex gap-4 justify-center md:justify-end">
-      <a href="https://www.instagram.com/dra.josareldiaz/" target="_blank" rel="noopener" class="hover:text-yellow-300 transition">Instagram</a>
-      <a href="https://api.whatsapp.com/send?phone=584126764468" target="_blank" rel="noopener" class="hover:text-yellow-300 transition">WhatsApp</a>
+    
+    <!-- Barra de Copyright -->
+
+    <div class="border-t border-gray-700 mt-12 pt-6 text-center">
+      <p>© 2025 Dra. Josarel Diaz. Todos los derechos reservados.</p>
+      <p class="text-sm text-gray-500 mt-1">Diseñado por Jose Sanchez</p>
     </div>
   </div>
 </footer>
 
 <!--Seccion js-->
 <script src="animation.js"></script>
+<script src="scriptparalaspreguntas.js"></script>
+
+
 
 </body>
 </html>
