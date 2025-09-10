@@ -1,4 +1,4 @@
-  // Animación de entrada para todas las secciones con fade-in
+ // Animación de entrada para todas las secciones con fade-in
 
   
   window.addEventListener('DOMContentLoaded', () => {
